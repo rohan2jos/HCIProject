@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1adcb2b7-50f3-43f0-9a51-aeab8e42b291" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/css/CustomStyle.css" afterPath="$PROJECT_DIR$/Views/css/CustomStyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/gatherInfo.html" afterPath="$PROJECT_DIR$/Views/gatherInfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/index.html" afterPath="$PROJECT_DIR$/Views/index.html" />
     </list>
     <ignored path="HCITeam5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,8 +62,8 @@
       <file leaf-file-name="gatherInfo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Views/gatherInfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6855346">
-              <caret line="165" column="24" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.3081761">
+              <caret line="137" column="12" selection-start-line="137" selection-start-column="12" selection-end-line="137" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -463,8 +461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/gatherInfo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6855346">
-          <caret line="165" column="24" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.3081761">
+          <caret line="137" column="12" selection-start-line="137" selection-start-column="12" selection-end-line="137" selection-end-column="12" />
           <folding />
         </state>
       </provider>
