@@ -1,4 +1,14 @@
 ﻿<!DOCTYPE html>
+<script>
+    function showDiv(show, hide1, hide2) {
+        document.getElementById(show).style.display = "block";
+        document.getElementById(hide1).style.display = "none";
+        document.getElementById(hide2).style.display = "none";
+    }
+</script>
+
+
+
 <html lang="en">
 
 <head>
@@ -35,29 +45,6 @@
 
 </head>
 
-<style>
-
-    .carousel-indicators-numbers li {
-        text-indent: 0;
-        margin: 0 2px;
-        width: 30px;
-        height: 30px;
-        border: none;
-        border-radius: 100%;
-        line-height: 30px;
-        color: #fff;
-        background-color: #999;
-        -webkit-transition: all 0.25s ease;
-        transition: all 0.25s ease;
-    }
-    .carousel-indicators-numbers li.active, .carousel-indicators-numbers li:hover {
-        margin: 0 2px;
-        width: 30px;
-        height: 30px;
-        background-color: #337ab7;
-    }
-
-</style>
 
 <body style="background-color: #003748">
 
@@ -119,54 +106,186 @@
 
         <div id="page-wrapper">
 
-            <div class="container-fluid" style="background-color: #fbfcfc;">
+            <div class="container-fluid" style="background-color: #fbfcfc; font-family: 'Roboto', sans-serif;">
 
                 <!-- Page Heading -->
                 <div class="row" style="background-color: #003748">
                     <div class="col-lg-12">
-                        <p class="page-header" style="text-align: center; font-family: 'Roboto', sans-serif; color: #d6d6d6; font-size: 22px; font-weight: lighter; border-bottom: none; margin-top:10px; margin-bottom:30px;">
-                            Here are a few resouces that will help you get started <!-- <small>Statistics Overview</small> -->
+                        <p class="page-header" style="text-align: left; font-family: 'Roboto', sans-serif; color: #d6d6d6; font-size: 20px; border-bottom: none; margin-top:-20px; margin-bottom:10px;">
+                            These three resouces will surely help you to get started <!-- <small>Statistics Overview</small> -->
                         </p>
 
                     </div>
-                </div>
+                    <center>
+                        <div id="card1"class="card" style="width:95%;background-color:#dfdfdf;height:70vh;margin-bottom:10px;overflow:scroll">
+                            <div class="card-block">
+                                <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Homebuying 101: How to Buy a Home </p>
+                                <p style="text-align:left;padding-right:5px;padding-left:7px"> Ten-hour course designed for any first-time homebuyer to get familiar with the home buying process from start to end</p>
+                                <div>
+                                    <ol style="text-align: left; padding-left: 6%">
+                                        <li style="font-weight: bold">
+                                            <p>How is it useful to me?</p>
+                                            <ul style="padding-left:5%">
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">Required if you are applying for financial assistance from the City.</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">You will learn about mortgage process, managing debt, shopping for a home, and legal concerns related to homebuying</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">Required to gain access to various city programs</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/HB101faqs">
+                                            Get More Information
+                                        </a>
+                                        <hr />
+                                        <li style="text-align: left; font-weight: bold">
+                                            <p>What is the class fee?</p>
+                                            <ul style="padding-left:5%">
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">$25 for Boston residents</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/Homebuying101Schedule">
+                                            Check the schedule for upcoming classes
+                                        </a>
+                                    </ol>
+                                    
+                                </div>
+      
+                            </div>
+                        </div>
+                        <div id="card2" class="card" style="width:95%;background-color:#dfdfdf;height:70vh;margin-bottom:10px;overflow:scroll;display:none">
+                            <div class="card-block">
+                                <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Affordable Home Opportunities </p>
+                                
+                                <div>
+                                    <ol style="text-align: left; padding-left: 6%">
+                                        <li style="font-weight: bold">
+                                            <p>How is it useful to me?</p>
+                                            <ul style="padding-left:5%">
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">It's an opportunity to purchase an affordable home in one of Boston’s neighborhoods.</p>
+                                                </li>                                         
+                                            </ul>
+                                        </li>
+                                        <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/affordable_home_opportunities">
+                                            Get More Information
+                                        </a>
+                                        <hr />
+                                        <li style="text-align: left; font-weight: bold">
+                                            <p>Am I eligible for this?</p>
+                                            <p style="font-weight:normal">You might be eligible if</p>
+                                            <ul style="padding-left:5%">
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">Your household income is less than $113,800</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">You are first time home buyer</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/affordable_home_opportunities">
+                                            Check your eligibility
+                                        </a>
+                                        <hr />
+                                        <li style="text-align: left; font-weight: bold">
+                                            <p>How to apply?</p>
+                                            <ul style="padding-left:5%">
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">First check if you are eligible to participate in this program</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">Apply to the Neighborhood Homes Initiative</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">Qualified applicants will be automatically entered into every lottery for which they are qualified and meet the income limits</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/portal/v1/contentRepository/Public/dnd%20pdfs/BostonHomeCenter/NHI_Application_2016_HUD_Numbers_160720.pdf">
+                                            Download the NHI application
+                                        </a>
+                                    </ol>
 
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="card3" class="card" style="width:95%;background-color:#dfdfdf;height:70vh;margin-bottom:10px;overflow:scroll;display:none">
+                            <div class="card-block">
+                                <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Financial Assistance Program </p>
+
+                                <div>
+                                    <ol style="text-align: left; padding-left: 6%">
+                                        <li style="font-weight: bold">
+                                            <p>How is it useful to me?</p>
+                                            <ul style="padding-left:5%">
+                                                <li type="disc">
+                                                    <p style="font-weight:normal"> Offers up to 3% of the purchase price towards down payment</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal"> Offers closing costs for 1-2 unit properties and condominiums</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal"> 5% of purchase price for 3-unit properties</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal"> Benefits including zero interest, deferred payments, 10-year term loan</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
+                                            Get More Information
+                                        </a>
+                                        <hr />
+                                        <li style="text-align: left; font-weight: bold">
+                                            <p>Am I eligible for this?</p>
+                                            <p style="font-weight:normal">You might be eligible if</p>
+                                            <ul style="padding-left:5%">
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">Your household assets are not more than $75,000</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">Your credit score is at least 660</p>
+                                                </li>
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">You have completed Boston Homebuying 101 and Homeowner 201 classes</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
+                                            Check your eligibility
+                                        </a>
+                                        <hr />
+                                        <li style="text-align: left; font-weight: bold">
+                                            <p>How to apply?</p>
+                                            <ul style="padding-left:5%">
+                                                <li type="disc">
+                                                    <p style="font-weight:normal">You can find all the step wise information about the application process by visiting the following link</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
+                                            Apply for this program
+                                        </a>
+                                    </ol>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button id="b1" class="active" onclick="showDiv('card1','card2','card3')">1</button>
+                        <button id="b2" class="active" onclick="showDiv('card2','card1','card3')">2</button>
+                        <button id="b3" class="active" onclick="showDiv('card3','card1','card2')">3</button>
+                    </center>                 
+                </div>
             </div>
 
-
-
-
-                <div id="carousel-example-generic" class="carousel slide">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators carousel-indicators-numbers">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1">2</li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2">3</li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="http://placehold.it/1200x500" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="http://placehold.it/1200x500" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="http://placehold.it/1200x500" alt="...">
-                        </div>
-                    </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
+           
             </div>
 
             <!-- /.container-fluid -->
@@ -186,7 +305,6 @@
     <script src="js/plugins/morris/raphael.min.js"></script>
     <script src="js/plugins/morris/morris.min.js"></script>
     <script src="js/plugins/morris/morris-data.js"></script>
-
 </body>
 
 </html>
