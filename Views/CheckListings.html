@@ -1,7 +1,13 @@
 ﻿<!DOCTYPE html>
-
+<script type="text/javascript">
+    function doSomething(text) {
+        if (text.length > 0)
+            document.getElementById("submit_button").disabled = false;
+        else
+            document.getElementById("submit_button").disabled = true;
+    }
+</script>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -40,7 +46,6 @@
     <script src="locationpicker.jquery.js"></script>
 
 </head>
-
 
 <body style="background-color: #003748">
 
@@ -84,8 +89,8 @@
                         <a href=""><i class="fa fa-fw fa-edit"></i> Find a Lender</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Questions <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Questions <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
                             <li>
                                 <a href="#">Ask Questions</a>
                             </li>
@@ -113,29 +118,30 @@
                     <center>
                         <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:70vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden">
                             <div class="card-block">
-                                <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Select Location </p>
-                                <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">I would prefer to have my new house within miles of the selected location</p>
+                                <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Select your preferred location </p>
 
-
-                                <!-- FOR LOCATION PICKER -->
-                                Location: <input type="text" id="us2-address" style="width: 200px"/>
-                                Radius: <input type="text" id="us2-radius"/>
-                                <div id="us2" style="width: 500px; height: 400px;"></div>
-                                Lat.: <input type="text" id="us2-lat"/>
-                                Long.: <input type="text" id="us2-lon"/>
+                                    <div class="input-group" style="margin: auto; width: 60%;">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                                        <input id="us2-address" style="width: 200px" type="text" class="form-control" name="email" placeholder="Preferred Location" onchange="doSomething(this.value)">
+                                    </div>   
+                                <input type="text" id="us2-radius" hidden/>
+                                <div id="us2" style="width: 97%; height: 400px;padding-top:10px;"></div>
+                                Lat.: <input type="text" id="us2-lat" hidden/>
+                                Long.: <input type="text" id="us2-lon" hidden/>
                                 <script>
                                     $('#us2').locationpicker({
                                         location: {
-                                            latitude: 46.15242437752303,
-                                            longitude: 2.7470703125
+                                            latitude: 42.360083,
+                                            longitude: -71.05888
                                         },
-                                        radius: 300,
+                                        radius: 100,
                                         inputBinding: {
                                             latitudeInput: $('#us2-lat'),
                                             longitudeInput: $('#us2-lon'),
                                             radiusInput: $('#us2-radius'),
                                             locationNameInput: $('#us2-address')
                                         },
+                                        markerInCenter: true,
                                         enableAutocomplete: true
                                     });
                                 </script>
@@ -143,6 +149,11 @@
                         </div>
                       
                     </center>
+                    <div>
+                        <input class="btn pull-right" style="margin: 10px; margin-top: 0px" type="submit" id="submit_button" value="Next">
+                        <input class="btn btn-link pull-left" style="margin: 10px; margin-top: 0px; color: #dfdfdf; text-decoration: underline" type="submit" id="submit_button" value="Back">
+                        
+                    </div>
                 </div>
             </div>
 
