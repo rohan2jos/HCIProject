@@ -111,47 +111,34 @@
                 <!-- Page Heading -->
                 <div class="row" style="background-color: #003748">
                     <div class="col-lg-12">
-                        <p class="page-header" style="text-align: left; font-family: 'Roboto', sans-serif; color: #d6d6d6; font-size: 20px; border-bottom: none; margin-top:-20px; margin-bottom:10px;">
-                            Let's get your location preference first
+                        <p class="page-header" style="white-space:nowrap;text-align:center;font-family: 'Roboto', sans-serif; color: #d6d6d6; font-size: 20px; border-bottom: none; margin-top:-20px; margin-bottom:10px">
+                            Almost there!<br/>
                         </p>
+                        <p style="white-space: nowrap; text-align: center; font-family: 'Roboto', sans-serif; color: #d6d6d6;font-size:large">Let's get your preferred house type</p>
                     </div>
                     <center>
-                        <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:70vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden">
+                        <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:50vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden;margin-top:20px">
                             <div class="card-block">
-                                <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Select your preferred location </p>
-
-                                    <div class="input-group" style="margin: auto; width: 60%;">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
-                                        <input id="us2-address" style="width: 200px" type="text" class="form-control" name="email" placeholder="Preferred Location" onchange="doSomething(this.value)">
-                                    </div>   
-                                <input type="text" id="us2-radius" hidden/>
-                                <div id="us2" style="width: 97%; height: 400px;padding-top:10px;"></div>
-                                <input type="text" id="us2-lat" hidden/>
-                                <input type="text" id="us2-lon" hidden/>
-                                <script>
-                                    $('#us2').locationpicker({
-                                        location: {
-                                            latitude: 42.360083,
-                                            longitude: -71.05888
-                                        },
-                                        radius: 100,
-                                        inputBinding: {
-                                            latitudeInput: $('#us2-lat'),
-                                            longitudeInput: $('#us2-lon'),
-                                            radiusInput: $('#us2-radius'),
-                                            locationNameInput: $('#us2-address')
-                                        },
-                                        markerInCenter: true,
-                                        enableAutocomplete: true
-                                    });
-                                </script>
+                                <form style="padding-top:20%">
+                                    <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">What kind of houses are you interested in? </p>
+                                    <div class="checkbox" style="text-align: left;font-family: 'Roboto', sans-serif;font-size:14px;margin-left:5%">
+                                        <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Apartments - 1 bedroom</label><br />
+                                        <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Apartments - 2 bedroom</label><br />
+                                        <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Apartments - Studio</label><br />
+                                        <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Condo</label><br />
+                                        <label><input type="checkbox" style="width:16px;height:18px;">&nbsp;&nbsp; Multifamily house</label><br />
+                                        <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Town homes</label><br />
+                                        <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Show me all the listings that you have</label><br />
+                                    </div>
+                                    <p style="text-align:left;font-size:12px;margin-top:20px;margin-left:10px">Only 'Show me all the listings that you have' option is working currently.</p>
+                                </form>
                             </div>
                         </div>
                       
                     </center>
                     <div>
-                        <input class="btn pull-right" style="margin: 10px; margin-top: 0px" type="submit" id="submit_button" value="Next" disabled=true onclick="location.href='CheckListings2.html'">
-                        <input class=" btn btn-link pull-left" style="margin: 10px; margin-top: 0px; color: #dfdfdf; text-decoration: underline" type="submit" id="submit_button" value="Back" onclick="location.href='index.html'">    
+                        <input class="btn pull-right" style="margin: 10px; margin-top: 0px" type="submit" id="submit_button" value="Next">
+                        <input class="btn btn-link pull-left" style="margin: 10px; margin-top: 0px; color: #dfdfdf; text-decoration: underline" type="submit" id="submit_button" value="Back" onclick="location.href='CheckListings.html'">    
                     </div>
                 </div>
             </div>
