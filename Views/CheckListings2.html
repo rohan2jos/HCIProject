@@ -1,9 +1,5 @@
 ﻿<!DOCTYPE html>
 <script type="text/javascript">
-    $(".dropdown-menu li a").click(function(e){
-        var selText = $(this).text();
-        $(this).parents('.input-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
-    });
     function doSomething(text) {
         if (text.length > 0)
             document.getElementById("submit_button").disabled = false;
@@ -128,7 +124,7 @@
                         <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:70vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden;margin-top:20px">
                             <div class="card-block">
                                 <form>
-                                    <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">What kind of houses are you interested in? </p>
+                                    <p class="card-title" style="text-align:left;padding-top: 5px;font-weight: bold; font-size: 16px;padding-left:5px">What kind of houses are you interested in? </p>
                                     <!--<div class="checkbox" style="text-align: left;font-family: 'Roboto', sans-serif;font-size:14px;margin-left:5%">
                                         <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Apartments - 1 bedroom</label><br />
                                         <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Apartments - 2 bedroom</label><br />
@@ -138,71 +134,46 @@
                                         <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Town homes</label><br />
                                         <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Show me all the listings that you have</label><br />
                                     </div>-->
-                                    <table class="table table-hover">
-                                        <thead>
-                                        <tr>
-                                            <th>Type</th>
-                                            <th>Select</th>
-
-                                        </tr>
-                                        </thead>
+                                    <table class="table table-hover" style="width:100%">
                                         <tbody>
-                                        <tr>
-                                            <td>Apartments - 1 Bedroom</td>
-                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Apartments - 2 Bedroom</td>
-                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Apartments - Studio</td>
-                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Condo</td>
-                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Multifamily houses</td>
-                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Town Homes</td>
-                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
-                                        </tr>
-
+                                            <tr style="width: 100%">
+                                                <td style="padding-bottom:0;width:10%"><input type="checkbox" style="width:27px;height:27px;"></td>
+                                                <td style="width:90%">Apartments - 1 Bedroom</td>
+                                            </tr>
+                                            <tr style="width: 100%">
+                                                <td style="padding-bottom:0;width:10%"><input type="checkbox" style="width:27px;height:27px;"></td>
+                                                <td style="width:90%">Apartments - 2 Bedroom</td>
+                                            </tr>
+                                            <tr style="width: 100%">
+                                                <td style="padding-bottom:0;width:10%"><input type="checkbox" style="width:27px;height:27px;"></td>
+                                                <td style="width:90%">Apartments - Studio</td>
+                                            </tr>
+                                            <tr style="width: 100%">
+                                                <td style="padding-bottom:0;width:10%"><input type="checkbox" style="width:27px;height:27px;"></td>
+                                                <td style="width:90%">Condo</td>
+                                            </tr>
+                                            <tr style="width: 100%">
+                                                <td style="padding-bottom:0;width:10%"><input type="checkbox" style="width:27px;height:27px;"></td>
+                                                <td style="width:90%">Multifamily houses</td>
+                                            </tr>
+                                            <tr style="width: 100%">
+                                                <td style="padding-bottom:0;width:10%"><input type="checkbox" style="width:27px;height:27px;"></td>
+                                                <td style="width:90%">Town Homes</td>
+                                            </tr>
                                         </tbody>
                                     </table>
-
-
-                                    <script>
-                                        $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
-
-                                            var $target = $( event.currentTarget );
-
-                                            $target.closest( '.btn-group' )
-                                                    .find( '[data-bind="label"]' ).text( $target.text() )
-                                                    .end()
-                                                    .children( '.dropdown-toggle' ).dropdown( 'toggle' );
-
-                                            return false;
-
-                                        });
-                                    </script>
-
-
-                                    <div class="btn-group btn-input clearfix">
-                                        <button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
-                                            <span data-bind="label">Price Range</span> <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">100k-300k</a></li>
-                                            <li><a href="#">300k-500k</a></li>
-                                            <li><a href="#">500k and above</a></li>
-                                        </ul>
+                                    <div>
+                                        <p class="card-title" style="padding-top: 10px;font-weight: bold; font-size: 16px;text-align:left;padding-left:5px">What is your approximate budget range? </p>
+                                        <div style="text-align:left;padding-left:5px;margin-bottom:5px">
+                                            <select class="form-control" style="width:80%;background-color:#dfdfdf">
+                                                <option>$100,000 - $300,000</option>
+                                                <option>$300,000 - $500,000</option>
+                                                <option>$500,000 - $1,000,000</option>
+                                                <option>$1,000,000 - $5,000,000</option>
+                                                <option>I am not sure about my budget</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <p style="text-align:left;font-size:12px;margin-top:20px;margin-left:10px">Only 'Show me all the listings that you have' option is working currently.</p>
                                 </form>
                             </div>
                         </div>
