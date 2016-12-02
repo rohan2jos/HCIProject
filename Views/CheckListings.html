@@ -1,5 +1,7 @@
 ﻿<!DOCTYPE html>
 <script type="text/javascript">
+
+
     function doSomething(text) {
         if (text.length > 0)
             document.getElementById("submit_button").disabled = false;
@@ -24,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="button.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
@@ -45,6 +48,13 @@
    
     <script src="locationpicker.jquery.js"></script>
 
+
+    <!-- If you want to use the buttons on the bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+
+
+
 </head>
 
 <body style="background-color: #003748">
@@ -62,6 +72,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand navbarMenu" href="index.html" style="font-family: 'Roboto', sans-serif; color:#ffffff">HomeBuyingBuddy&nbsp;<span class="glyphicon glyphicon-tag"></span></a>
+                <a class="navbar-brand navbarMenu pull-right" href="index.html" style="font-family: 'Roboto', sans-serif;color:#ffffff"><span class="glyphicon glyphicon-arrow-left"></span></a>
             </div>
 
 
@@ -150,8 +161,9 @@
                       
                     </center>
                     <div>
-                        <input class="btn pull-right" style="margin: 10px; margin-top: 0px" type="submit" id="submit_button" value="Next" disabled=true onclick="location.href='CheckListings2.html'">
-                        <input class=" btn btn-link pull-left" style="margin: 10px; margin-top: 0px; color: #dfdfdf; text-decoration: underline" type="submit" id="submit_button" value="Back" onclick="location.href='index.html'">    
+                        ]
+                        <input class=" btn pull-right" style="margin: 10px; margin-top: 0px" type="submit" id="submit_button" value="Next" disabled=true onclick="location.href='CheckListings2.html'">
+                        <input class=" btn btn-link pull-left" style="margin: 10px; margin-top: 0px; color: #dfdfdf; text-decoration: underline" type="submit" id="submit_button" value="Back" onclick="location.href='index.html'">
                     </div>
                 </div>
             </div>

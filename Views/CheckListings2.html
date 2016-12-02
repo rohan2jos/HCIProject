@@ -45,6 +45,8 @@
    
     <script src="locationpicker.jquery.js"></script>
 
+
+
 </head>
 
 <body style="background-color: #003748">
@@ -62,6 +64,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand navbarMenu" href="index.html" style="font-family: 'Roboto', sans-serif; color:#ffffff">HomeBuyingBuddy&nbsp;<span class="glyphicon glyphicon-tag"></span></a>
+                <a class="navbar-brand navbarMenu pull-right" href="CheckListings.html" style="font-family: 'Roboto', sans-serif;color:#ffffff"><span class="glyphicon glyphicon-arrow-left"></span></a>
             </div>
 
 
@@ -104,6 +107,7 @@
             <!-- /.navbar-collapse -->
         </nav>
 
+
         <div id="page-wrapper">
 
             <div class="container-fluid" style="background-color: #fbfcfc; font-family: 'Roboto', sans-serif;">
@@ -119,9 +123,9 @@
                     <center>
                         <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:50vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden;margin-top:20px">
                             <div class="card-block">
-                                <form style="padding-top:20%">
+                                <form>
                                     <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">What kind of houses are you interested in? </p>
-                                    <div class="checkbox" style="text-align: left;font-family: 'Roboto', sans-serif;font-size:14px;margin-left:5%">
+                                    <!--<div class="checkbox" style="text-align: left;font-family: 'Roboto', sans-serif;font-size:14px;margin-left:5%">
                                         <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Apartments - 1 bedroom</label><br />
                                         <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Apartments - 2 bedroom</label><br />
                                         <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Apartments - Studio</label><br />
@@ -129,7 +133,42 @@
                                         <label><input type="checkbox" style="width:16px;height:18px;">&nbsp;&nbsp; Multifamily house</label><br />
                                         <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Town homes</label><br />
                                         <label><input type="checkbox" style="width:16px;height:18px;"> &nbsp;&nbsp;Show me all the listings that you have</label><br />
-                                    </div>
+                                    </div>-->
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Type</th>
+                                            <th>Select</th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Apartments - 1 Bedroom</td>
+                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Apartments - 2 Bedroom</td>
+                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Apartments - Studio</td>
+                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Condo</td>
+                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Multifamily houses</td>
+                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Town Homes</td>
+                                            <td><input type="checkbox" style="width:30px;height:30px;"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                     <p style="text-align:left;font-size:12px;margin-top:20px;margin-left:10px">Only 'Show me all the listings that you have' option is working currently.</p>
                                 </form>
                             </div>
