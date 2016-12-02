@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<script type="text/javascript">
+    function hideShow(divid_h, divid_s) {
+        document.getElementById(divid_h).style.display = "none";
+        document.getElementById(divid_s).style.display = "block";
+    }
+    function showSucc() {
+        document.getElementById('myform').style.display = "none";
+        document.getElementById('success').style.display = "block";
+        document.getElementById('mh').style.display = "none";
+        document.getElementById('sh').style.display = "block";
+    }
+</script>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home Buying Buddy</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/CustomStyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="icon5.png" type="image/png" sizes="16x16">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6VmhrwOjylk9nok7SNOhH3_JsBAZI6mM&libraries=places"></script>
+
+    <script src="locationpicker.jquery.js"></script>
+
+
+
+</head>
+
+<body style="background-color: #003748">
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="padding-top:10px; padding-bottom:10px">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbarMenu pull-left" href="CheckListings3.html" style="font-family: 'Roboto', sans-serif;color:#ffffff"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="navbar-brand navbarMenu" href="index.html" style="font-family: 'Roboto', sans-serif; color:#ffffff">HomeBuyingBuddy&nbsp;<span class="glyphicon glyphicon-tag"></span></a>
+            </div>
+
+
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="gatherInfo.html"><i class="fa fa-fw fa-info"></i> Gather Information</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-tasks"></i> Listings <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#">Check Listings</a>
+                            </li>
+                            <li>
+                                <a href="#">Favorite Listings</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-fw fa-money"></i> Find a Lender</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-question"></i> Questions <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li>
+                                <a href="#">Ask Questions</a>
+                            </li>
+                            <li>
+                                <a href="#">My Questions</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid" style="background-color: #fbfcfc; font-family: 'Roboto', sans-serif;">
+
+                <!-- Page Heading -->
+                <div class="row" style="background-color: #003748">
+                    <center>
+                        <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:83vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden;margin-top:-15px">
+                            <div class="card-block">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active" style="height:30vh">
+                                            <img src="pics/house11.jpg" style="height: 100%; width: 100%">
+                                        </div>
+
+                                        <div class="item" style="height:30vh">
+                                            <img src="pics/house12.png" style="height: 100%; width: 100%">
+                                        </div>
+
+                                        <div class="item" style="height:30vh">
+                                            <img src="pics/house13.jpg" style="height: 100%; width: 100%">
+                                        </div>
+                                    </div>
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                        <span aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                        <span aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <table class="table" style="width:100%;margin-bottom:0">
+                                        <tbody>
+                                            <tr style="width:100%">
+                                                <td style="width:80%">
+                                                    <p style="font-family: 'Roboto', sans-serif;color:#333;font-weight:bold;font-size:16px">
+                                                        411 Beacon St, Boston, MA 02115
+                                                    </p>
+                                                    </td>
+                                                <td>
+                                                    <span>
+                                                        <i id="favu" class="fa fa-fw fa-heart-o fa-2x" style="color: #cc0000; font-weight: bold; margin-top: 5px" onclick="hideShow('favu','favs')"></i>
+                                                        <i id="favs" class="fa fa-fw fa-heart fa-2x" style="color: #cc0000; font-weight: bold; margin-top: 5px;display:none" onclick="hideShow('favs','favu')"></i>
+                                                    </span>
+                                                </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p style="text-align:left;padding-left:6px;padding-right:5px;font-family: 'Roboto', sans-serif; font-size: 16px; margin-top:0;padding-top:0">Price:&nbsp;<span style="font-weight: bold; color: green;">$300,000</span></p>
+                                    
+                                    <div>
+                                        <p style="text-align:left;padding-left:6px;padding-right:5px;font-family: 'Roboto', sans-serif;">Features:&nbsp;</p>
+                                        <ul style="text-align: left; padding-right: 5px; font-family: 'Roboto', sans-serif;">
+                                            <li>2858 Sqft floor size</li>
+                                            <li>2 Stories</li>
+                                            <li>Wood Construction</li>
+                                            <li>Garage included</li>
+                                            <li>6 Rooms, 2 Baths</li>
+                                            <li>Paved Road</li>
+                                            <li>5 mins walking distance to stop and shop, 15 mins walk from T- stop</li>
+                                        </ul>
+                                    </div>
+                                    <div style="font-family: 'Roboto', sans-serif;color:#003748">
+                                        <button type="button" class="btn btn-link pull-left" data-toggle="modal" data-target="#myModal" style="color: #333;outline: #dfdfdf; text-decoration: underline; font-size: 16px">
+                                        Get More Details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="myModal" role="dialog">
+                                            <div class="modal-dialog">
+
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header" id="mh">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">Get More Details</h4>
+                                                    </div>
+                                                    <div class="modal-header" id="sh" style="display:none">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">Your message has been sent! <br /> You will receive the details soon..</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form id="myform">
+                                                            <div class="form-group">
+                                                                <label for="usr">Your Name:</label>
+                                                                <input type="text" class="form-control" id="usr">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="pwd">Your Phone Number:</label>
+                                                                <input type="tel" class="form-control" id="pwd">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="msg">Message You want to send:</label>
+                                                                <textarea class="form-control" rows="5" id="msg" placeholder="I am interested in 411 Beacon St, Boston, MA 02115. Please send me more details."></textarea>
+                                                            </div>
+                                                            <div class="modal-footer" style="text-align:center">
+                                                                <button type="button" class="btn" style="background-color:#003748;color:#dfdfdf" onclick="showSucc()">Send Message</button>
+                                                            </div>
+                                                        </form>
+                                                        <div id="success" style="display:none">
+                                                            <i class="fa fa-thumbs-up fa-5x" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    </div>
+                                </div>
+                    </center>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- /.container-fluid -->
+        <!-- /#page-wrapper -->
+
+    </div>
+
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+</body>
+
+</html>
