@@ -211,7 +211,7 @@
                                     <div class="col-lg-12">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Comparison Chart</h3>
+                                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Price Chart</h3>
                                             </div>
                                             <div class="panel-body">
                                                 <div id="myfirstchart" style="height: 250px;"></div>
@@ -220,6 +220,18 @@
                                     </div>
                                 </div>
 
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title"><i class="fa fa-bar-chart-o fa-fw"></i>Comparison Chart</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div id="comparison"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- /.row -->
 
@@ -491,6 +503,22 @@
         // Labels for the ykeys -- will be displayed when you hover over the
         // chart.
         labels: ['Value']
+    });
+
+    Morris.Line({
+        element: 'comparison',
+        data: [
+            { y: '2006', a: 100, b: 90 },
+            { y: '2007', a: 75,  b: 65 },
+            { y: '2008', a: 240,  b: 250 },
+            { y: '2009', a: 250,  b: 260 },
+            { y: '2010', a: 210,  b: 210 },
+            { y: '2011', a: 200,  b: 220 },
+            { y: '2016', a: 300, b: 330 }
+        ],
+        xkey: 'y',
+        ykeys: ['a', 'b'],
+        labels: ['Sales Price', 'List Price']
     });
 </script>
 </html>
