@@ -4,6 +4,14 @@
         document.getElementById(divid_h).style.display = "none";
         document.getElementById(divid_s).style.display = "block";
     }
+
+    function removeList2() {
+        document.getElementById('listing2').style.display = "none";
+    }
+    function removeList1() {
+        console.log("removing 1");
+        document.getElementById('listing1').style.display = "none";
+    }
 </script>
 <html lang="en">
 <head>
@@ -118,14 +126,11 @@
 
                     <!-- First Favourite Listing -->
 
-                    <div class="alert alert-warning alert-dismissible fade in" role="alert" style="width:95%;background-color:#dfdfdf;margin-bottom:10px;overflow-y:scroll;margin-top:20px">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="color: #1C2331">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div>
+                    <div class="card" role="dialog" id="listing1" style="width:95%;background-color:#dfdfdf;margin-bottom:10px;overflow-y:scroll;margin-top:20px">
+
                         <tr style="border-bottom:2px solid #003748;height:25vh;width:100%">
                             <td style="width:45%">
-                                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:100%">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:70%; margin-top: 30px;">
                                     <!-- Indicators -->
                                     <ol class="carousel-indicators">
                                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -162,24 +167,24 @@
                             <td style="width: 55%; font-family: 'Roboto', sans-serif">
                                 <p style="font-size: 14px; font-weight: bold;margin-bottom:5px">102 Freedom road, Brighton 02133</p>
                                 <p style="font-size:14px;color:green;font-weight:bold;">$171,000</p>
-                                <a href="" style="color:#333;text-decoration:underline;">View more details</a><br />
+                                <a href="viewMore.html" style="color:#333;text-decoration:underline;">View more details</a><br />
                             </td>
                         </tr>
 
-                        </div>
+                        <button type="button" class="btn btn-danger" data-dismiss="card" onclick="removeList1()" aria-label="Close" style="margin: 3px;">
+                            Remove
+                        </button>
+
                     </div>
 
                     <!-- End of First Favourite Listing -->
 
                     <!-- second Favourite Listing> -->
 
-                    <div class="alert alert-warning alert-dismissible fade in" role="alert" style="width:95%;background-color:#dfdfdf;margin-bottom:10px;overflow-y:scroll;margin-top:20px">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="color: #1C2331">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    <div class="card" role="dialog" id="listing2" style="width:95%;background-color:#dfdfdf;margin-bottom:10px;overflow-y:scroll;margin-top:20px">
                             <tr style="border-bottom:2px solid #003748;height:25vh;width:100%">
                                 <td style="width:45%">
-                                    <div id="myCarousel2" class="carousel slide" data-ride="carousel" style="width:100%">
+                                    <div id="myCarousel2" class="carousel slide" data-ride="carousel" style="width:70%; margin-top: 30px;">
                                         <!-- Indicators -->
                                         <ol class="carousel-indicators">
                                             <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
@@ -216,9 +221,12 @@
                                 <td style="width: 55%; font-family: 'Roboto', sans-serif">
                                     <p style="font-size: 14px; font-weight: bold;margin-bottom:5px">10 Carpel, Allston 02138</p>
                                     <p style="font-size:14px;color:green;font-weight:bold;">$190,000</p>
-                                    <a href="" style="color:#333;text-decoration:underline;">View more details</a><br />
+                                    <a href="viewMore.html" style="color:#333;text-decoration:underline;">View more details</a><br />
                                 </td>
                             </tr>
+                        <button type="button" class="btn btn-danger" data-dismiss="card" onclick="removeList2()" aria-label="Close" style="margin: 3px;">
+                            Remove
+                        </button>
                     </div>
 
                     <!-- End of Second Favourite Listing -->
