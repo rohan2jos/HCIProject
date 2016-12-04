@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<script>
+    function showDiv(show, hide1, hide2) {
+        document.getElementById(show).style.display = "block";
+        document.getElementById(hide1).style.display = "none";
+        document.getElementById(hide2).style.display = "none";
+    }
+</script>
+
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home Buying Buddy</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/CustomStyle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="icon5.png" type="image/png" sizes="16x16">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body style="background-color: #003748">
+
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" style="padding-top:10px; padding-bottom:10px">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar" ></span>
+                <span class="icon-bar" ></span>
+                <span class="icon-bar" ></span>
+            </button>
+            <a class="navbar-brand navbarMenu pull-left" href="index.html" style="font-family: 'Roboto', sans-serif;color:#ffffff"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="navbar-brand navbarMenu" href="index.html" style="font-family: 'Roboto', sans-serif;color:#ffffff">HomeBuyingBuddy&nbsp;<span class="glyphicon glyphicon-tag"></span></a>
+        </div>
+
+
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="gatherInfo.html"><i class="fa fa-fw fa-info"></i> Gather Information</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-tasks"></i> Listings <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo" class="collapse">
+                        <li>
+                            <a href="#">Check Listings</a>
+                        </li>
+                        <li>
+                            <a href="#">Favorite Listings</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-fw fa-money"></i> Find a Lender</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-question"></i> Questions <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo1" class="collapse">
+                        <li>
+                            <a href="#">Ask Questions</a>
+                        </li>
+                        <li>
+                            <a href="#">My Questions</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="page-wrapper">
+
+
+
+        <div class="container-fluid" style="background-color: #fbfcfc; font-family: 'Roboto', sans-serif;">
+
+            <!-- Page Heading -->
+            <div class="row" style="background-color: #003748">
+                <div class="col-lg-12">
+                    <p class="page-header" style="text-align: left; font-family: 'Roboto', sans-serif; color: #d6d6d6; font-size: 20px; border-bottom: none; margin-top:-20px; margin-bottom:10px;">
+                        Forums <!-- <small>Statistics Overview</small> -->
+                    </p>
+
+                </div>
+
+                <div class="container">
+
+                    <ul class="nav nav-pills">
+                        <li class="active"><a data-toggle="pill" href="#home" style="color:#dfdfdf;border:1px solid #dfdfdf;border-bottom:none">All Questions</a></li>
+                        <li><a data-toggle="pill" href="#menu1" style="color: #dfdfdf; border: 1px solid #dfdfdf; border-bottom: none">My Questions</a></li>
+                        <li><a data-toggle="pill" href="#menu2" style="color: #dfdfdf; border: 1px solid #dfdfdf">Ask <span class="glyphicon glyphicon-plus-sign"></span></a></li>
+
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <div id="card1"class="card" style="width: 100%; background-color: #dfdfdf; height: 70vh; margin-bottom: 10px; overflow-y: scroll; overflow-x: hidden">
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapse1"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 1 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapse2"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 2 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapse3"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 3 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapse4"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 4 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse4" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapse5"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 5 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse5" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapse6"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 6 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse6" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span>  Sample Answer 1</li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span>  Sample Answer 2</li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span>  Sample Answer 3</li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <div id="card1"class="card" style="width: 100%; background-color: #dfdfdf; height: 70vh; margin-bottom: 10px; overflow-y: scroll; overflow-x: hidden">
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapseMy1"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 1 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseMy1" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapseMy2"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 2 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseMy2" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapseMy3"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 3 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseMy3" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapseMy4"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 4 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseMy4" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapseMy5"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 5 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseMy5" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 1</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 2</i></li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span><i>  Sample Answer 3</i></li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapseMy6"><span class="glyphicon glyphicon-question-sign"></span> Sample Question 6 <span class="glyphicon glyphicon-menu-down pull-right"></span> </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseMy6" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span>  Sample Answer 1</li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span>  Sample Answer 2</li>
+                                                <li class="list-group-item"><span class="glyphicon glyphicon-user"></span>  Sample Answer 3</li>
+                                            </ul>
+                                            <div class="panel-footer"></span>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                            <div id="card1"class="card" style="width: 100%; background-color: #dfdfdf; height: 70vh; margin-bottom: 10px; overflow-y: scroll; overflow-x: hidden">
+                                <div class="card-block" style="padding-left: 5px; padding-right: 5px">
+                                    <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Financial Assistance Program </p>
+
+                                    <div>
+                                        <ol style="text-align: left; padding-left: 6%">
+                                            <li style="font-weight: bold">
+                                                <p>How is it useful to me?</p>
+                                                <ul style="padding-left:5%">
+                                                    <li type="disc">
+                                                        <p style="font-weight:normal"> Offers up to 3% of the purchase price towards down payment</p>
+                                                    </li>
+                                                    <li type="disc">
+                                                        <p style="font-weight:normal"> Offers closing costs for 1-2 unit properties and condominiums</p>
+                                                    </li>
+                                                    <li type="disc">
+                                                        <p style="font-weight:normal"> 5% of purchase price for 3-unit properties</p>
+                                                    </li>
+                                                    <li type="disc">
+                                                        <p style="font-weight:normal"> Benefits including zero interest, deferred payments, 10-year term loan</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
+                                                Get More Information
+                                            </a>
+                                            <hr />
+                                            <li style="text-align: left; font-weight: bold">
+                                                <p>Am I eligible for this?</p>
+                                                <p style="font-weight:normal">You might be eligible if</p>
+                                                <ul style="padding-left:5%">
+                                                    <li type="disc">
+                                                        <p style="font-weight:normal">Your household assets are not more than $75,000</p>
+                                                    </li>
+                                                    <li type="disc">
+                                                        <p style="font-weight:normal">Your credit score is at least 660</p>
+                                                    </li>
+                                                    <li type="disc">
+                                                        <p style="font-weight:normal">You have completed Boston Homebuying 101 and Homeowner 201 classes</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
+                                                Check your eligibility
+                                            </a>
+                                            <hr />
+                                            <li style="text-align: left; font-weight: bold">
+                                                <p>How to apply?</p>
+                                                <ul style="padding-left:5%">
+                                                    <li type="disc">
+                                                        <p style="font-weight:normal">You can find all the step wise information about the application process by visiting the following link</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
+                                                Apply for this program
+                                            </a>
+                                        </ol>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu3" class="tab-pane fade">
+                            <h3>Menu 3</h3>
+                            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <center>
+
+                    <!-- <div id="card2" class="card" style="width: 95%; background-color: #dfdfdf; height: 70vh; margin-bottom: 10px; overflow-y: scroll; overflow-x: hidden;display:none">
+                         <div class="card-block">
+                             <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Affordable Home Opportunities </p>
+
+                             <div>
+                                 <ol style="text-align: left; padding-left: 6%">
+                                     <li style="font-weight: bold">
+                                         <p>How is it useful to me?</p>
+                                         <ul style="padding-left:5%">
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">It's an opportunity to purchase an affordable home in one of Boston’s neighborhoods.</p>
+                                             </li>
+                                         </ul>
+                                     </li>
+                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/affordable_home_opportunities">
+                                         Get More Information
+                                     </a>
+                                     <hr />
+                                     <li style="text-align: left; font-weight: bold">
+                                         <p>Am I eligible for this?</p>
+                                         <p style="font-weight:normal">You might be eligible if</p>
+                                         <ul style="padding-left:5%">
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">Your household income is less than $113,800</p>
+                                             </li>
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">You are first time home buyer</p>
+                                             </li>
+                                         </ul>
+                                     </li>
+                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/affordable_home_opportunities">
+                                         Check your eligibility
+                                     </a>
+                                     <hr />
+                                     <li style="text-align: left; font-weight: bold">
+                                         <p>How to apply?</p>
+                                         <ul style="padding-left:5%">
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">First check if you are eligible to participate in this program</p>
+                                             </li>
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">Apply to the Neighborhood Homes Initiative</p>
+                                             </li>
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">Qualified applicants will be automatically entered into every lottery for which they are qualified and meet the income limits</p>
+                                             </li>
+                                         </ul>
+                                     </li>
+                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/portal/v1/contentRepository/Public/dnd%20pdfs/BostonHomeCenter/NHI_Application_2016_HUD_Numbers_160720.pdf">
+                                         Download the NHI application
+                                     </a>
+                                 </ol>
+
+                             </div>
+
+                         </div>
+                     </div>
+                     <div id="card3" class="card" style="width: 95%; background-color: #dfdfdf; height: 70vh; margin-bottom: 10px; overflow-y: scroll; overflow-x: hidden;display:none">
+                         <div class="card-block">
+                             <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Financial Assistance Program </p>
+
+                             <div>
+                                 <ol style="text-align: left; padding-left: 6%">
+                                     <li style="font-weight: bold">
+                                         <p>How is it useful to me?</p>
+                                         <ul style="padding-left:5%">
+                                             <li type="disc">
+                                                 <p style="font-weight:normal"> Offers up to 3% of the purchase price towards down payment</p>
+                                             </li>
+                                             <li type="disc">
+                                                 <p style="font-weight:normal"> Offers closing costs for 1-2 unit properties and condominiums</p>
+                                             </li>
+                                             <li type="disc">
+                                                 <p style="font-weight:normal"> 5% of purchase price for 3-unit properties</p>
+                                             </li>
+                                             <li type="disc">
+                                                 <p style="font-weight:normal"> Benefits including zero interest, deferred payments, 10-year term loan</p>
+                                             </li>
+                                         </ul>
+                                     </li>
+                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
+                                         Get More Information
+                                     </a>
+                                     <hr />
+                                     <li style="text-align: left; font-weight: bold">
+                                         <p>Am I eligible for this?</p>
+                                         <p style="font-weight:normal">You might be eligible if</p>
+                                         <ul style="padding-left:5%">
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">Your household assets are not more than $75,000</p>
+                                             </li>
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">Your credit score is at least 660</p>
+                                             </li>
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">You have completed Boston Homebuying 101 and Homeowner 201 classes</p>
+                                             </li>
+                                         </ul>
+                                     </li>
+                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
+                                         Check your eligibility
+                                     </a>
+                                     <hr />
+                                     <li style="text-align: left; font-weight: bold">
+                                         <p>How to apply?</p>
+                                         <ul style="padding-left:5%">
+                                             <li type="disc">
+                                                 <p style="font-weight:normal">You can find all the step wise information about the application process by visiting the following link</p>
+                                             </li>
+                                         </ul>
+                                     </li>
+                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
+                                         Apply for this program
+                                     </a>
+                                 </ol>
+
+                             </div>
+
+                         </div>
+                     </div>
+                     <button id="b1" class="active" onclick="showDiv('card1','card2','card3')">1</button>
+                     <button id="b2" class="active" onclick="showDiv('card2','card1','card3')">2</button>
+                     <button id="b3" class="active" onclick="showDiv('card3','card1','card2')">3</button>-->
+                </center>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- /.container-fluid -->
+
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="js/plugins/morris/raphael.min.js"></script>
+<script src="js/plugins/morris/morris.min.js"></script>
+<script src="js/plugins/morris/morris-data.js"></script>
+</body>
+
+</html>
