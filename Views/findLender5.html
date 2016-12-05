@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <script type="text/javascript">
-    function doSomething(text) {
-        if (text.length > 0)
-            document.getElementById("submit_button").disabled = false;
-        else
-            document.getElementById("submit_button").disabled = true;
+    function showSuccLe() {
+        document.getElementById('hhe').style.display = "none";
+        document.getElementById('she').style.display = "block";
+        document.getElementById('hft').style.display = "none";
+        document.getElementById('hm').style.display = "none";
+        document.getElementById('successLe').style.display = "block";
     }
 </script>
 <html lang="en">
@@ -116,82 +117,123 @@
                 <div class="row" style="background-color: #003748">
                     <div class="col-lg-12">
                         <p class="page-header" style="text-align:center;font-family: 'Roboto', sans-serif; color: #d6d6d6; font-size: 20px; border-bottom: none; margin-top:-20px; margin-bottom:0;padding-bottom:0">
-                           We think, all following lenders will be suitable for you.. <br /> 
+                           We found all following lenders that will be suitable for you.. <br /> 
                         </p>
 
                     </div>
                     <center>
                         <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:75vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden;margin-top:20px">
                             <div class="card-block">
-                                <p style="font-weight:bold;font-size:16px" id="h2">Select lenders you want to contact:</p>
-                                <table id="t2" style="width:100%;margin-left:5px">
+                                <p style="font-weight:bold;font-size:16px;margin-top:5px" id="h2">Select lenders you want to contact:</p>
+                                <table id="t2" style="width:100%">
                                     <tbody>
                                         <tr style="width:100%;border-bottom:1px solid #003748">
-                                            <td style="width:10%;height:20vh">
+                                            <td style="width: 10%; height: 20vh; padding-left: 3%">
                                                 <input type="checkbox" value="" style="width:25px;height:25px">
                                             </td>
                                             <td style="width:30%">
                                                 <div>
-                                                    <img src="pics/agent1.jpg" height="100" width="100" style="border-radius:5px" />
+                                                    <img src="pics/lender1.jpg" height="100" width="100" style="border-radius:5px" />
                                                 </div>
                                             </td>
                                             <td style="width:40%">
                                                 <div>
-                                                    <p style="font-weight:bold">Thomas Winset</p>
+                                                    <p style="font-weight:bold">Embrace Home Loans</p>
+                                                    <p><i class="fa fa-phone"></i>&nbsp;(111) 111-1111</p>
                                                     <i class="fa fa-star" style="color:gold"></i>
                                                     <i class="fa fa-star" style="color:gold"></i>
                                                     <i class="fa fa-star" style="color:gold"></i>
                                                     <i class="fa fa-star" style="color:gold"></i>
                                                     <i class="fa fa-star-half-full" style="color:gold"></i><br />
-                                                    <a href="review.html" style="text-decoration:underline">2 reviews</a>
+                                                    <a href="review2.html" style="text-decoration:underline">2 reviews</a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr style="width:100%;border-bottom:1px solid #003748">
-                                            <td style="width:10%;height:20vh">
+                                            <td style="width: 10%; height: 20vh; padding-left: 3%">
                                                 <input type="checkbox" value="" style="width:25px;height:25px">
                                             </td>
                                             <td style="width:30%">
                                                 <div>
-                                                    <img src="pics/agent2.jpg" height="100" width="100" style="border-radius:5px" />
+                                                    <img src="pics/lender2.jpg" height="100" width="100" style="border-radius:5px" />
                                                 </div>
                                             </td>
                                             <td style="width:40%">
                                                 <div>
-                                                    <p style="font-weight:bold">Jay Simson</p>
+                                                    <p style="font-weight:bold">Mortgage Masters</p>
+                                                    <p><i class="fa fa-phone"></i>&nbsp;(777) 777-7777</p>
                                                     <i class="fa fa-star" style="color:gold"></i>
                                                     <i class="fa fa-star" style="color:gold"></i>
                                                     <i class="fa fa-star" style="color:gold"></i>
                                                     <i class="fa fa-star-o" style="color:gold"></i>
                                                     <i class="fa fa-star-o" style="color:gold"></i><br />
-                                                    <a href="review.html" style="text-decoration:underline">1 review</a>
+                                                    <a href="review2.html" style="text-decoration:underline">1 review</a>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr style="width:100%;border-bottom:1px solid #003748">
-                                            <td style="width:10%;height:20vh">
+                                            <td style="width: 10%; height: 20vh; padding-left: 3%">
                                                 <input type="checkbox" value="" style="width:25px;height:25px">
                                             </td>
                                             <td style="width:30%">
                                                 <div>
-                                                    <img src="pics/agent3.jpg" height="100" width="100" style="border-radius:5px" />
+                                                    <img src="pics/lender3.jpg" height="100" width="100" style="border-radius:5px" />
                                                 </div>
                                             </td>
                                             <td style="width:40%">
                                                 <div>
-                                                    <p style="font-weight:bold">Erin Green</p>
+                                                    <p style="font-weight:bold">BNC National Bank</p>
+                                                    <p><i class="fa fa-phone"></i>&nbsp;(000) 000-0000</p>
                                                     <i class="fa fa-star" style="color:gold"></i>
                                                     <i class="fa fa-star" style="color:gold"></i>
                                                     <i class="fa fa-star-half" style="color:gold"></i>
                                                     <i class="fa fa-star-o" style="color:gold"></i>
                                                     <i class="fa fa-star-o" style="color:gold"></i><br />
-                                                    <a href="review.html" style="text-decoration:underline">1 review</a>
+                                                    <a href="review2.html" style="text-decoration:underline">1 review</a>
                                                 </div>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
+                                <div style="margin-top:10px; margin-bottom:10px">
+                                    <button type="button" class="btn" data-toggle="modal" data-target="#myModalLe" style="color: #dfdfdf;background-color:#003748; font-size: 16px">
+                                        Send My Info
+                                    </button>
+                                </div>
+                                    <div style="font-family: 'Roboto', sans-serif;color:#003748">
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="myModalLe" role="dialog">
+                                            <div class="modal-dialog">
+
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header" id="hhe">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">We will send your details to the lender</h4>
+                                                        <p class="modal-title">Lender will call you soon!</p>
+                                                    </div>
+                                                    <div class="modal-header" id="she" style="display:none">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title">We have sent your details! <br /> You will receive the call soon..</h4>
+                                                    </div>
+                                                    <div class="modal-body" id="hm">
+                                                        <div class="form-group">
+                                                            <label for="msg">Comments:</label>
+                                                            <textarea class="form-control" rows="5" id="msg" placeholder="You can add any other details here. For example, more contact details, preferred time to receive a call or any additional information."></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer" style="text-align:center" id="hft">
+                                                        <button type="button" class="btn" style="background-color:#003748;color:#dfdfdf" onclick="showSuccLe()">Send Message</button>
+                                                    </div>
+                                                    <div id="successLe" style="display:none">
+                                                        <i class="fa fa-thumbs-up fa-5x" aria-hidden="true" style="margin-top:5%;margin-bottom:5%"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                         </div>
 
                     </center>
