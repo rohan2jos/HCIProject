@@ -1,7 +1,5 @@
 ﻿<!DOCTYPE html>
 <script type="text/javascript">
-
-
     function doSomething(text) {
         if (text.length > 0)
             document.getElementById("submit_button").disabled = false;
@@ -26,7 +24,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
-    <link href="button.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
@@ -47,11 +44,6 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6VmhrwOjylk9nok7SNOhH3_JsBAZI6mM&libraries=places"></script>
    
     <script src="locationpicker.jquery.js"></script>
-
-
-    <!-- If you want to use the buttons on the bootstrap -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
 
 
 
@@ -97,7 +89,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href=""><i class="fa fa-fw fa-money"></i> Find a Lender</a>
+                        <a href="findLender1.html"><i class="fa fa-fw fa-money"></i> Find a Lender</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-question"></i> Questions <i class="fa fa-fw fa-caret-down"></i></a>
@@ -115,6 +107,7 @@
             <!-- /.navbar-collapse -->
         </nav>
 
+
         <div id="page-wrapper">
 
             <div class="container-fluid" style="background-color: #fbfcfc; font-family: 'Roboto', sans-serif;">
@@ -122,46 +115,31 @@
                 <!-- Page Heading -->
                 <div class="row" style="background-color: #003748">
                     <div class="col-lg-12">
-                        <p class="page-header" style="font-family: 'Roboto', sans-serif; color: #d6d6d6; font-size: 20px; border-bottom: none; margin-top:80px; margin-bottom:10px;">
-                            Let's get your location preference first
+                        <p class="page-header" style="white-space:nowrap;text-align:center;font-family: 'Roboto', sans-serif; color: #d6d6d6; font-size: 20px; border-bottom: none; margin-top:-20px; margin-bottom:0;padding-bottom:0">
+                            Let's start with a few questions!<br />
+                        </p>
+                        <p style="text-align: left;font-family: 'Roboto', sans-serif; color: #d6d6d6">In order to match you with the suitable lenders, we will need some more information about you.
+                        </p>
+                        <p style="text-align: left;  font-family: 'Roboto', sans-serif; color: #d6d6d6">
+                            All the questions are optional. Try to give accurate information in order to get most relevant result!
                         </p>
                     </div>
                     <center>
-                        <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:63vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden">
+                        <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:46vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden;margin-top:20px">
                             <div class="card-block">
-                                <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Select your preferred location </p>
-
-                                    <div class="input-group" style="margin: auto; width: 60%;">
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
-                                        <input id="us2-address" style="width: 200px" type="text" class="form-control" name="email" placeholder="Preferred Location" onchange="doSomething(this.value)">
-                                    </div>   
-                                <input type="text" id="us2-radius" hidden/>
-                                <div id="us2" style="width: 97%; height: 50vh;padding-top:10px;"></div>
-                                <input type="text" id="us2-lat" hidden/>
-                                <input type="text" id="us2-lon" hidden/>
-                                <script>
-                                    $('#us2').locationpicker({
-                                        location: {
-                                            latitude: 42.360083,
-                                            longitude: -71.05888
-                                        },
-                                        radius: 100,
-                                        inputBinding: {
-                                            latitudeInput: $('#us2-lat'),
-                                            longitudeInput: $('#us2-lon'),
-                                            radiusInput: $('#us2-radius'),
-                                            locationNameInput: $('#us2-address')
-                                        },
-                                        markerInCenter: true,
-                                        enableAutocomplete: true
-                                    });
-                                </script>
+                                <form>
+                                    <p class="card-title" style="padding-top:20%;font-weight: bold; font-size: 18px;">What is your ZipCode? </p> 
+                                    <p style="margin-bottom:20px">We will try to find the lender in your area</p>   
+                                    <div style="width:50%">
+                                        <input type="number" class="form-control" autofocus="autofocus" id="usr">
+                                    </div>
+                                </form>
                             </div>
                         </div>
                       
                     </center>
                     <div style="text-align:center">
-                        <input class="btn" style="margin: 10px; margin-top: 0px; width:95%" type="submit" id="submit_button" value="Next" disabled=true onclick="location.href='CheckListings2.html'">
+                        <input class="btn" style="width:95%;margin: 10px; margin-top: 0px" type="submit" id="submit_button" value="Next" onclick="location.href='findLender2.html'">    
                     </div>
                 </div>
             </div>
