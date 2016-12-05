@@ -99,13 +99,8 @@
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-
     <div id="page-wrapper">
-
-
-
         <div class="container-fluid" style="background-color: #fbfcfc; font-family: 'Roboto', sans-serif;">
-
             <!-- Page Heading -->
             <div class="row" style="background-color: #003748">
                 <div class="col-lg-12">
@@ -151,7 +146,7 @@
                                                         <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
                                                         <textarea class="form-control" rows="5" id="comment"></textarea>
                                                     </div>
-                                                    <button class="btn btn-success">Post</button>
+                                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalAns">Post</button>
                                                 </form>
                                             </div>
                                         </div>
@@ -182,7 +177,7 @@
                                                         <label for="comment">Answer this &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
                                                         <textarea class="form-control" rows="5" id="comment"></textarea>
                                                     </div>
-                                                    <button class="btn btn-success">Post</button>
+                                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalAns">Post</button>
                                                 </form>
                                             </div>
 
@@ -208,7 +203,7 @@
                                                         <label for="comment">Answer this &nbsp; <span class="glyphicon glyphicon-pencil"></span></label>
                                                         <textarea class="form-control" rows="5" id="comment"></textarea>
                                                     </div>
-                                                    <button class="btn btn-success">Post</button>
+                                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalAns">Post</button>
                                                 </form>
                                             </div>
                                         </div>
@@ -229,7 +224,7 @@
                                                         <label for="comment">Answer this &nbsp; <span class="glyphicon glyphicon-pencil"></span></label>
                                                         <textarea class="form-control" rows="5" id="comment"></textarea>
                                                     </div>
-                                                    <button class="btn btn-success">Post</button>
+                                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalAns">Post</button>
                                                 </form>
                                             </div>
                                         </div>
@@ -255,7 +250,7 @@
                                                         <label for="comment">Answer this &nbsp; <span class="glyphicon glyphicon-pencil"></span></label>
                                                         <textarea class="form-control" rows="5" id="comment"></textarea>
                                                     </div>
-                                                    <button class="btn btn-success">Post</button>
+                                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalAns">Post</button>
                                                 </form>
                                             </div>
                                         </div>
@@ -282,9 +277,26 @@
                                                         <textarea class="form-control" rows="5" id="comment"></textarea>
                                                     </div>
                                                 </form>
-                                                <button class="btn btn-success">Post</button>
+                                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalAns">Post</button>
                                             </div>
 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="myModalAns" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header" style="text-align:center">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title"> Thank you for submitting your answer!</h4>
+                                            </div>
+                                            <div class="modal-body" style="text-align:center">
+                                                <p class="modal-title">We will review your answer and it will appear in the forum within 2 hours</p>
+                                            </div>
+                                            <div style="text-align:center">
+                                                <i class="fa fa-thumbs-up fa-5x" aria-hidden="true" style="margin-top: 5%; margin-bottom: 5%; color: #5cb85c"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -349,31 +361,27 @@
                                             <textarea class="form-control" rows="5" id="comment"></textarea>
                                         </div>
                                         <!-- <button class="btn btn-success">Post</button> -->
-                                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Post</button>
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Post</button>
 
                                         <!-- Modal -->
                                         <div class="modal fade" id="myModal" role="dialog">
                                             <div class="modal-dialog">
-
                                                 <!-- Modal content-->
                                                 <div class="modal-content">
-                                                    <div class="modal-header">
+                                                    <div class="modal-header" style="text-align:center">
                                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h4 class="modal-title"><i class="fa fa-thumbs-up fa-2x" aria-hidden="true" style="color: #5cb85c"></i> Question Posting successful!</h4>
+                                                        <h4 class="modal-title"> Successfully submitted your question!</h4>
                                                     </div>
-                                                    <div class="modal-header" id="sh">
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h5 class="modal-title">One of our experts will review your question and it will appear shortly</h5>
+                                                    <div class="modal-body" style="text-align:center">
+                                                        <p class="modal-title">We will review your question and it will appear in the forum within 2 hours</p>
                                                     </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <div style="text-align:center">
+                                                        <i class="fa fa-thumbs-up fa-5x" aria-hidden="true" style="margin-top: 5%; margin-bottom: 5%; color: #5cb85c"></i>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </form>
-
                                 </div>
                             </div>
                         </div>
@@ -383,133 +391,6 @@
                         </div>
                     </div>
                 </div>
-
-                <center>
-
-                    <!-- <div id="card2" class="card" style="width: 95%; background-color: #dfdfdf; height: 70vh; margin-bottom: 10px; overflow-y: scroll; overflow-x: hidden;display:none">
-                         <div class="card-block">
-                             <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Affordable Home Opportunities </p>
-
-                             <div>
-                                 <ol style="text-align: left; padding-left: 6%">
-                                     <li style="font-weight: bold">
-                                         <p>How is it useful to me?</p>
-                                         <ul style="padding-left:5%">
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">It's an opportunity to purchase an affordable home in one of Boston’s neighborhoods.</p>
-                                             </li>
-                                         </ul>
-                                     </li>
-                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/affordable_home_opportunities">
-                                         Get More Information
-                                     </a>
-                                     <hr />
-                                     <li style="text-align: left; font-weight: bold">
-                                         <p>Am I eligible for this?</p>
-                                         <p style="font-weight:normal">You might be eligible if</p>
-                                         <ul style="padding-left:5%">
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">Your household income is less than $113,800</p>
-                                             </li>
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">You are first time home buyer</p>
-                                             </li>
-                                         </ul>
-                                     </li>
-                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/affordable_home_opportunities">
-                                         Check your eligibility
-                                     </a>
-                                     <hr />
-                                     <li style="text-align: left; font-weight: bold">
-                                         <p>How to apply?</p>
-                                         <ul style="padding-left:5%">
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">First check if you are eligible to participate in this program</p>
-                                             </li>
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">Apply to the Neighborhood Homes Initiative</p>
-                                             </li>
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">Qualified applicants will be automatically entered into every lottery for which they are qualified and meet the income limits</p>
-                                             </li>
-                                         </ul>
-                                     </li>
-                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/portal/v1/contentRepository/Public/dnd%20pdfs/BostonHomeCenter/NHI_Application_2016_HUD_Numbers_160720.pdf">
-                                         Download the NHI application
-                                     </a>
-                                 </ol>
-
-                             </div>
-
-                         </div>
-                     </div>
-                     <div id="card3" class="card" style="width: 95%; background-color: #dfdfdf; height: 70vh; margin-bottom: 10px; overflow-y: scroll; overflow-x: hidden;display:none">
-                         <div class="card-block">
-                             <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Financial Assistance Program </p>
-
-                             <div>
-                                 <ol style="text-align: left; padding-left: 6%">
-                                     <li style="font-weight: bold">
-                                         <p>How is it useful to me?</p>
-                                         <ul style="padding-left:5%">
-                                             <li type="disc">
-                                                 <p style="font-weight:normal"> Offers up to 3% of the purchase price towards down payment</p>
-                                             </li>
-                                             <li type="disc">
-                                                 <p style="font-weight:normal"> Offers closing costs for 1-2 unit properties and condominiums</p>
-                                             </li>
-                                             <li type="disc">
-                                                 <p style="font-weight:normal"> 5% of purchase price for 3-unit properties</p>
-                                             </li>
-                                             <li type="disc">
-                                                 <p style="font-weight:normal"> Benefits including zero interest, deferred payments, 10-year term loan</p>
-                                             </li>
-                                         </ul>
-                                     </li>
-                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
-                                         Get More Information
-                                     </a>
-                                     <hr />
-                                     <li style="text-align: left; font-weight: bold">
-                                         <p>Am I eligible for this?</p>
-                                         <p style="font-weight:normal">You might be eligible if</p>
-                                         <ul style="padding-left:5%">
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">Your household assets are not more than $75,000</p>
-                                             </li>
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">Your credit score is at least 660</p>
-                                             </li>
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">You have completed Boston Homebuying 101 and Homeowner 201 classes</p>
-                                             </li>
-                                         </ul>
-                                     </li>
-                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
-                                         Check your eligibility
-                                     </a>
-                                     <hr />
-                                     <li style="text-align: left; font-weight: bold">
-                                         <p>How to apply?</p>
-                                         <ul style="padding-left:5%">
-                                             <li type="disc">
-                                                 <p style="font-weight:normal">You can find all the step wise information about the application process by visiting the following link</p>
-                                             </li>
-                                         </ul>
-                                     </li>
-                                     <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
-                                         Apply for this program
-                                     </a>
-                                 </ol>
-
-                             </div>
-
-                         </div>
-                     </div>
-                     <button id="b1" class="active" onclick="showDiv('card1','card2','card3')">1</button>
-                     <button id="b2" class="active" onclick="showDiv('card2','card1','card3')">2</button>
-                     <button id="b3" class="active" onclick="showDiv('card3','card1','card2')">3</button>-->
-                </center>
             </div>
         </div>
 
