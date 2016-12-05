@@ -343,64 +343,36 @@
                         <div id="menu2" class="tab-pane fade">
                             <div id="card1"class="card" style="width: 100%; background-color: #dfdfdf; height: 62vh; margin-bottom: 10px; overflow-y: scroll; overflow-x: hidden">
                                 <div class="card-block" style="padding-left: 5px; padding-right: 5px">
-                                    <p class="card-title" style="padding-top: 5px;font-weight: bold; font-size: 16px">Financial Assistance Program </p>
+                                    <form style="padding: 10px;">
+                                        <div class="form-group">
+                                            <label for="comment">Ask a question &nbsp <span class="glyphicon glyphicon-pencil"></span></label>
+                                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                                        </div>
+                                        <!-- <button class="btn btn-success">Post</button> -->
+                                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Post</button>
 
-                                    <div>
-                                        <ol style="text-align: left; padding-left: 6%">
-                                            <li style="font-weight: bold">
-                                                <p>How is it useful to me?</p>
-                                                <ul style="padding-left:5%">
-                                                    <li type="disc">
-                                                        <p style="font-weight:normal"> Offers up to 3% of the purchase price towards down payment</p>
-                                                    </li>
-                                                    <li type="disc">
-                                                        <p style="font-weight:normal"> Offers closing costs for 1-2 unit properties and condominiums</p>
-                                                    </li>
-                                                    <li type="disc">
-                                                        <p style="font-weight:normal"> 5% of purchase price for 3-unit properties</p>
-                                                    </li>
-                                                    <li type="disc">
-                                                        <p style="font-weight:normal"> Benefits including zero interest, deferred payments, 10-year term loan</p>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
-                                                Get More Information
-                                            </a>
-                                            <hr />
-                                            <li style="text-align: left; font-weight: bold">
-                                                <p>Am I eligible for this?</p>
-                                                <p style="font-weight:normal">You might be eligible if</p>
-                                                <ul style="padding-left:5%">
-                                                    <li type="disc">
-                                                        <p style="font-weight:normal">Your household assets are not more than $75,000</p>
-                                                    </li>
-                                                    <li type="disc">
-                                                        <p style="font-weight:normal">Your credit score is at least 660</p>
-                                                    </li>
-                                                    <li type="disc">
-                                                        <p style="font-weight:normal">You have completed Boston Homebuying 101 and Homeowner 201 classes</p>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
-                                                Check your eligibility
-                                            </a>
-                                            <hr />
-                                            <li style="text-align: left; font-weight: bold">
-                                                <p>How to apply?</p>
-                                                <ul style="padding-left:5%">
-                                                    <li type="disc">
-                                                        <p style="font-weight:normal">You can find all the step wise information about the application process by visiting the following link</p>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <a style="font-size:14px;text-decoration:underline" href="http://dnd.cityofboston.gov/#page/FinancialAssistanceProgram">
-                                                Apply for this program
-                                            </a>
-                                        </ol>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="myModal" role="dialog">
+                                            <div class="modal-dialog">
 
-                                    </div>
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title"><i class="fa fa-thumbs-up fa-2x" aria-hidden="true" style="color: #5cb85c"></i> Question Posting successful!</h4>
+                                                    </div>
+                                                    <div class="modal-header" id="sh">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h5 class="modal-title">One of our experts will review your question and it will appear shortly</h5>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
 
                                 </div>
                             </div>
