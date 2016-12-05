@@ -42,7 +42,7 @@
     <![endif]-->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6VmhrwOjylk9nok7SNOhH3_JsBAZI6mM&libraries=places"></script>
-   
+
     <script src="locationpicker.jquery.js"></script>
 
 
@@ -63,7 +63,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand navbarMenu pull-left" href="findLender2.html" style="font-family: 'Roboto', sans-serif;color:#ffffff"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="navbar-brand navbarMenu pull-left" href="findLender4.html" style="font-family: 'Roboto', sans-serif;color:#ffffff"><span class="glyphicon glyphicon-chevron-left"></span></a>
                 <a class="navbar-brand navbarMenu" href="index.html" style="font-family: 'Roboto', sans-serif; color:#ffffff">HomeBuyingBuddy&nbsp;<span class="glyphicon glyphicon-tag"></span></a>
             </div>
 
@@ -116,31 +116,85 @@
                 <div class="row" style="background-color: #003748">
                     <div class="col-lg-12">
                         <p class="page-header" style="text-align:center;font-family: 'Roboto', sans-serif; color: #d6d6d6; font-size: 20px; border-bottom: none; margin-top:-20px; margin-bottom:0;padding-bottom:0">
-                            Let's get some information regarding your budget now..<br />
+                           We think, all following lenders will be suitable for you.. <br /> 
                         </p>
-                      
+
                     </div>
                     <center>
-                        <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:59vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden;margin-top:20px">
+                        <div id="card1" class="card" style="width:95%;background-color:#dfdfdf;height:75vh;margin-bottom:10px;overflow-y:scroll;overflow-x:hidden;margin-top:20px">
                             <div class="card-block">
-                                <form>
-                                    <p class="card-title" style="padding-top:10px;font-weight: bold; font-size: 16px; padding-left:5px;padding-right:5px">How much are you planning to spend on your new house? </p>    
-                                    <div style="width:50%">
-                                        <input type="number" class="form-control" autofocus="autofocus" id="usr">
-                                    </div>
-                                    <p class="card-title" style="padding-top:50px;font-weight: bold; font-size: 16px; padding-left: 5px; padding-right: 5px">How much are you going to spend on down payment? </p>
-                                    <p style="padding-left:5px;padding-right:5px">Most loans require down payment of at least 3.5% <br /> A larger down payment will lower your monthly mortgage payment</p>
-                                    <div style="width:50%;padding-bottom:5px">
-                                        <input type="number" class="form-control" autofocus="autofocus" id="usr">
-                                    </div>
-                                </form>
+                                <p style="font-weight:bold;font-size:16px" id="h2">Select lenders you want to contact:</p>
+                                <table id="t2" style="width:100%;margin-left:5px">
+                                    <tbody>
+                                        <tr style="width:100%;border-bottom:1px solid #003748">
+                                            <td style="width:10%;height:20vh">
+                                                <input type="checkbox" value="" style="width:25px;height:25px">
+                                            </td>
+                                            <td style="width:30%">
+                                                <div>
+                                                    <img src="pics/agent1.jpg" height="100" width="100" style="border-radius:5px" />
+                                                </div>
+                                            </td>
+                                            <td style="width:40%">
+                                                <div>
+                                                    <p style="font-weight:bold">Thomas Winset</p>
+                                                    <i class="fa fa-star" style="color:gold"></i>
+                                                    <i class="fa fa-star" style="color:gold"></i>
+                                                    <i class="fa fa-star" style="color:gold"></i>
+                                                    <i class="fa fa-star" style="color:gold"></i>
+                                                    <i class="fa fa-star-half-full" style="color:gold"></i><br />
+                                                    <a href="review.html" style="text-decoration:underline">2 reviews</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr style="width:100%;border-bottom:1px solid #003748">
+                                            <td style="width:10%;height:20vh">
+                                                <input type="checkbox" value="" style="width:25px;height:25px">
+                                            </td>
+                                            <td style="width:30%">
+                                                <div>
+                                                    <img src="pics/agent2.jpg" height="100" width="100" style="border-radius:5px" />
+                                                </div>
+                                            </td>
+                                            <td style="width:40%">
+                                                <div>
+                                                    <p style="font-weight:bold">Jay Simson</p>
+                                                    <i class="fa fa-star" style="color:gold"></i>
+                                                    <i class="fa fa-star" style="color:gold"></i>
+                                                    <i class="fa fa-star" style="color:gold"></i>
+                                                    <i class="fa fa-star-o" style="color:gold"></i>
+                                                    <i class="fa fa-star-o" style="color:gold"></i><br />
+                                                    <a href="review.html" style="text-decoration:underline">1 review</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr style="width:100%;border-bottom:1px solid #003748">
+                                            <td style="width:10%;height:20vh">
+                                                <input type="checkbox" value="" style="width:25px;height:25px">
+                                            </td>
+                                            <td style="width:30%">
+                                                <div>
+                                                    <img src="pics/agent3.jpg" height="100" width="100" style="border-radius:5px" />
+                                                </div>
+                                            </td>
+                                            <td style="width:40%">
+                                                <div>
+                                                    <p style="font-weight:bold">Erin Green</p>
+                                                    <i class="fa fa-star" style="color:gold"></i>
+                                                    <i class="fa fa-star" style="color:gold"></i>
+                                                    <i class="fa fa-star-half" style="color:gold"></i>
+                                                    <i class="fa fa-star-o" style="color:gold"></i>
+                                                    <i class="fa fa-star-o" style="color:gold"></i><br />
+                                                    <a href="review.html" style="text-decoration:underline">1 review</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                      
+
                     </center>
-                    <div style="text-align:center">
-                        <input class="btn" style="width:95%;margin: 10px; margin-top: 0px" type="submit" id="submit_button" value="Next" onclick="location.href='findLender4.html'">    
-                    </div>
                 </div>
             </div>
 
@@ -151,7 +205,7 @@
         <!-- /#page-wrapper -->
 
     </div>
-    
+
     <!-- /#wrapper -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
