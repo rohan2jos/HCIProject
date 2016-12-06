@@ -1,7 +1,5 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <script type="text/javascript">
-
-
     function doSomething(text) {
         if (text.length > 0)
             document.getElementById("submit_button").disabled = false;
@@ -26,7 +24,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
-    <link href="button.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
@@ -49,15 +46,10 @@
     <script src="locationpicker.jquery.js"></script>
 
 
-    <!-- If you want to use the buttons on the bootstrap -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-
-
 
 </head>
 
-<body style="color: #000000">
+<body style="color: #000000;margin-top:70px">
 
 <div id="wrapper">
 
@@ -71,14 +63,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand navbarMenu pull-left" href="index.html" style="font-family: 'Roboto', sans-serif;color:#ffffff"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="navbar-brand navbarMenu" href="index.html" style="font-family: 'Roboto', sans-serif;color:#ffffff">HomeBuyingBuddy&nbsp;<span class="glyphicon glyphicon-tag"></span></a>
+            <a class="navbar-brand navbarMenu pull-left" href="CheckListings.html" style="font-family: 'Roboto', sans-serif;color:#ffffff"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="navbar-brand navbarMenu" href="index.html" style="font-family: 'Roboto', sans-serif; color:#ffffff">HomeBuyingBuddy&nbsp;<span class="glyphicon glyphicon-tag"></span></a>
         </div>
 
 
         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav side-nav" style="padding-top: 19px;">
+            <ul class="nav navbar-nav side-nav" style="padding-top:19px">
                 <li>
                     <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
                 </li>
@@ -86,8 +78,8 @@
                     <a href="gatherInfo.html"><i class="fa fa-fw fa-info"></i> Gather Information</a>
                 </li>
                 <li class="active">
-                    <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-tasks"></i> Listings <i class="fa fa-fw fa-caret-down"></i></a>
-                    <ul id="demo1" class="collapse">
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-tasks"></i> Listings <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo" class="collapse">
                         <li>
                             <a href="CheckListings.html">Check Listings</a>
                         </li>
@@ -107,8 +99,8 @@
         <!-- /.navbar-collapse -->
     </nav>
 
-    <div id="page-wrapper" style="padding:0">
 
+    <div id="page-wrapper" style="padding:0">
         <div class="container-fluid" style="height: 100vh; background: linear-gradient(rgba(0,0,0,0.8),rgba(0,55,72,0.9),rgba(0,0,0,0.9)), url(pics/checklistingsbackground.jpg); font-family: 'Roboto', sans-serif;">
 
             <!-- Page Heading -->
