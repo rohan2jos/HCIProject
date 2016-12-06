@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1adcb2b7-50f3-43f0-9a51-aeab8e42b291" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/index.html" afterPath="$PROJECT_DIR$/Views/index.html" />
     </list>
     <ignored path="HCITeam5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6012024">
+            <state vertical-scroll-proportion="2.1643286">
               <caret line="99" column="142" selection-start-line="99" selection-start-column="142" selection-end-line="99" selection-end-column="142" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -100,7 +99,7 @@
       <file leaf-file-name="tutorials.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/tutorials.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.666666">
+            <state vertical-scroll-proportion="-203.125">
               <caret line="325" column="155" selection-start-line="325" selection-start-column="155" selection-end-line="325" selection-end-column="155" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -2123,7 +2122,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/tutorials.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.666666">
+        <state vertical-scroll-proportion="-203.125">
           <caret line="325" column="155" selection-start-line="325" selection-start-column="155" selection-end-line="325" selection-end-column="155" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -2174,7 +2173,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6012024">
+        <state vertical-scroll-proportion="2.1643286">
           <caret line="99" column="142" selection-start-line="99" selection-start-column="142" selection-end-line="99" selection-end-column="142" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
