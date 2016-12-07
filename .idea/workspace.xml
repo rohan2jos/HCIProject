@@ -3,23 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1adcb2b7-50f3-43f0-9a51-aeab8e42b291" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/CheckListings.html" afterPath="$PROJECT_DIR$/Views/CheckListings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/CheckListings2.html" afterPath="$PROJECT_DIR$/Views/CheckListings2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/CheckListings3.html" afterPath="$PROJECT_DIR$/Views/CheckListings3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/FavouriteListings.html" afterPath="$PROJECT_DIR$/Views/FavouriteListings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/contactAgent.html" afterPath="$PROJECT_DIR$/Views/contactAgent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/findLender1.html" afterPath="$PROJECT_DIR$/Views/findLender1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/findLender2.html" afterPath="$PROJECT_DIR$/Views/findLender2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/findLender3.html" afterPath="$PROJECT_DIR$/Views/findLender3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/findLender4.html" afterPath="$PROJECT_DIR$/Views/findLender4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/findLender5.html" afterPath="$PROJECT_DIR$/Views/findLender5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/forum.html" afterPath="$PROJECT_DIR$/Views/forum.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/index.html" afterPath="$PROJECT_DIR$/Views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/review.html" afterPath="$PROJECT_DIR$/Views/review.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/review2.html" afterPath="$PROJECT_DIR$/Views/review2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/testCheckListings.html" afterPath="$PROJECT_DIR$/Views/testCheckListings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/tutorials.html" afterPath="$PROJECT_DIR$/Views/tutorials.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/viewMore.html" afterPath="$PROJECT_DIR$/Views/viewMore.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/login.html" afterPath="$PROJECT_DIR$/Views/login.html" />
     </list>
     <ignored path="HCITeam5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -335,8 +319,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Views/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4279661">
-              <caret line="313" column="106" selection-start-line="313" selection-start-column="106" selection-end-line="313" selection-end-column="106" />
+            <state vertical-scroll-proportion="0.6991525">
+              <caret line="217" column="152" selection-start-line="217" selection-start-column="152" selection-end-line="217" selection-end-column="152" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -344,7 +328,6 @@
                 <element signature="n#style#0;n#a#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#center#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1905,8 +1888,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4279661">
-          <caret line="313" column="106" selection-start-line="313" selection-start-column="106" selection-end-line="313" selection-end-column="106" />
+        <state vertical-scroll-proportion="0.6991525">
+          <caret line="217" column="152" selection-start-line="217" selection-start-column="152" selection-end-line="217" selection-end-column="152" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1914,7 +1897,6 @@
             <element signature="n#style#0;n#a#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#center#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
